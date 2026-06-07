@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АкваМед — Клиника капельниц в Санкт-Петербурге</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-main">
+            <div class="container">
+                <!-- Левая часть: логотип -->
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        <img src="img/logo.svg">
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-name">АкваМед</span>
+                        <span class="logo-desc">Клиника капельниц</span>
+                    </div>
+                </a>
+
+                <!-- Центр: адрес и телефон -->
+                <div class="header-center">
+                    <img src="img/Location.svg" class = "header-info-item">
+                    <div class="header-info-item">
+                        
+                        <div class="info-label">Адрес</div>
+                        <div class="info-value">
+                            
+                            Санкт-Петербург, ул. Авиаконструкторов 45к1
+                        </div>
+                    </div>
+                    <div class="header-info-divider"></div>
+                    <img src="img/Phone.svg" class = "header-info-item">
+                    <div class="header-info-item">
+                        <div class="info-label">Поддержка 24/7</div>
+                        <div class="info-value">+7 (800) 889-99-99</div>
+                    </div>
+                </div>
+
+                <!-- Правая часть: время и соцсети -->
+                <div class="header-right">
+                    <img src="img/clock.svg" class ="header-info-item">
+                    <div class="header-work-time">
+                        <div class="work-label">Время работы</div>
+                        <div class="work-value">Круглосуточно</div>
+                    </div>
+                    <div class="header-socials">
+                        <a href="#" class="social-icon" aria-label="Поиск">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="VK">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm4.962 17.123h-1.744c-.66 0-.864-.525-2.05-1.714-1.033-1.033-1.49-1.171-1.744-1.171-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4 8.57 4 8.196c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.678.864 2.491 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.203.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.254-1.406 2.151-3.574 2.151-3.574.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.049.17.49-.085.744-.576.744z"/></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Telegram">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Профиль">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Навигация -->
+        <div class="header-nav">
+            <div class="container">
+                <nav class="main-nav">
+                    <a href="#services" class="nav-btn nav-btn-primary">Услуги</a>
+                    <a href="#about" class="nav-btn nav-btn-dropdown">О клинике <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;margin-left:4px;"><path d="M6 9l6 6 6-6"/></svg></a>
+                    <a href="#prices" class="nav-btn">Цены</a>
+                    <a href="#doctors" class="nav-btn">Врачи</a>
+                    <a href="#contacts" class="nav-btn">Контакты</a>
+                    <a href="#articles" class="nav-btn">Статьи</a>
+                </nav>
+                <div class="header-actions">
+                    <a href="#consultation" class="btn btn-outline">Записаться</a>
+                    <a href="#" class="btn btn-primary">Капельница на дому</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="services">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Клиника капельниц <span>АкваМед</span><br>в Санкт-Петербурге</h1>
+                <p class="hero-subtitle">Инфузионные программы под контролем врачей: детокс, энергия, красота и поддержка иммунитета</p>
+                <div class="hero-toggle"><button class="toggle-btn active">В клинике</button><button class="toggle-btn">На дому</button></div>
+                <div class="hero-cards">
+                    <div class="service-card"><div class="service-card-header"><span class="service-card-title">Капельница Детокс</span><div class="service-card-icon"><img src="img/reindrop_1.svg"></img></div></div><p class="service-card-desc">Очищение организма после алкоголя и токсинов</p><div class="service-card-price">Цена: от 5 000 ₽</div><button class="service-card-btn">Подробнее</button></div>
+                    <div class="service-card"><div class="service-card-header"><span class="service-card-title">Капельница Энергия</span><div class="service-card-icon"><img src="img/reindrop_2.svg"></img></div></div><p class="service-card-desc">Быстрое восстановление сил и тонуса</p><div class="service-card-price">Цена: от 5 000 ₽</div><button class="service-card-btn">Подробнее</button></div>
+                    <div class="service-card"><div class="service-card-header"><span class="service-card-title">Капельница Золушка</span><div class="service-card-icon"><img src="img/reindrop_3.svg"></img></div></div><p class="service-card-desc">Омоложение кожи, сияние изнутри</p><div class="service-card-price">Цена: от 5 900 ₽</div><button class="service-card-btn">Подробнее</button></div>
+                </div>
+                <div class="hero-actions"><a href="#consultation" class="btn btn-primary">Подобрать капельницу</a><a href="#consultation" class="btn btn-light">Бесплатная консультация</a></div>
+            </div>
+            <div class="hero-image"><div class="hero-image-bg"></div><img src="img/doctor.svg" alt="Врач"></div>
+        </div>
+    </section>
+
+    <!-- Benefits — новый макет с капельницей по центру -->
+    <section class="benefits" id="about">
+        <div class="bg-circle bg-circle-1"></div>
+        <div class="bg-circle bg-circle-2"></div>
+        <div class="bg-circle bg-circle-3"></div>
+        <div class="bg-circle bg-circle-4"></div>
+        <div class="bg-circle bg-circle-5"></div>
+        <div class="bg-circle bg-circle-6"></div>
+        <div class="container">
+            <h2 class="benefits-title">Что даёт инфузионная терапия?</h2>
+            <div class="benefits-layout">
+                <!-- Левая колонка -->
+                <div class="benefits-left">
+                    <div class="benefit-card benefit-card-top">
+                        <div class="benefit-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#1B8A4C" stroke-width="2">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                        </div>
+                        <p>Эффект уже после<br>первой процедуры</p>
+                    </div>
+                    <div class="benefit-card benefit-card-bottom">
+                        <div class="benefit-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#1B8A4C" stroke-width="2">
+                                <path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/>
+                            </svg>
+                        </div>
+                        <p>100% усвоение — витамины<br>и препараты минуют ЖКТ</p>
+                    </div>
+                </div>
+
+                <!-- Центр: капельница -->
+                <div class="benefits-center-img">
+                    <img src="img/hz.svg" alt="Капельница">
+                </div>
+
+                <!-- Правая колонка -->
+                <div class="benefits-right">
+                    <div class="benefit-card benefit-card-top">
+                        <div class="benefit-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#1B8A4C" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <p>5 капельниц = 3 месяца<br>приёма витаминов</p>
+                    </div>
+                    <div class="benefit-card benefit-card-bottom">
+                        <div class="benefit-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#1B8A4C" stroke-width="2">
+                                <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
+                                <line x1="12" y1="9" x2="12" y2="13"/>
+                                <line x1="12" y1="17" x2="12.01" y2="17"/>
+                            </svg>
+                        </div>
+                        <p>Без нагрузки на желудок<br>и печень</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation -->
+    <section class="consultation" id="consultation">
+        <div class="container">
+            <div class="consultation-content">
+                <h2>Не знаете какая капельница<br>или процедура вам подойдёт?</h2>
+                <p>Оставьте заявку, наш специалист перезвонит вам и бесплатно проконсультирует вас</p>
+                <form class="consultation-form" id="consultationForm" action="api/submit-form.php" method="POST">
+                    <div class="form-row"><input type="text" name="name" class="form-input" placeholder="Ваше имя" required><input type="tel" name="phone" class="form-input" placeholder="Ваш телефон" required></div>
+                    <input type="email" name="email" class="form-input" placeholder="Email (необязательно)" style="margin-bottom: 16px;">
+                    <textarea name="message" class="form-input form-textarea" placeholder="Опишите вашу проблему или вопрос"></textarea>
+                    <div class="form-submit"><button type="submit" class="btn btn-white">Отправить заявку</button><span class="form-policy">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</span></div>
+                </form>
+            </div>
+            <div class="consultation-image"><img src="img/doctor_2.svg" alt="Консультация"></div>
+        </div>
+    </section>
+
+    <!-- Text Blocks -->
+    <section class="text-blocks" id="articles">
+        <!-- Text Block 1 -->
+        <div class="text-block">
+            <div class="container">
+                <div class="text-block-left">
+                    <h2>Текстовый блок</h2>
+                    <p>Приятно, граждане, наблюдать, как многие известные личности своевременно верифицированы. Господа, высококачественный прототип будущего проекта играет определяющее значение для вывода текущих активов. Наше дело не так однозначно, как может показаться: постоянное информационно-пропагандистское обеспечение нашей деятельности способствует повышению качества экспериментов, поражающих по своей масштабности и грандиозности. Кстати, реплицированные с зарубежных источников, современные исследования формируют глобальную экономическую сеть и при этом — объявлены нарушающими общечеловеческие нормы этики и морали.</p>
+                    <p>В целом, конечно, синтетическое тестирование предопределяет высокую востребованность экономической целесообразности принимаемых решений. Наше дело не так однозначно, как может показаться: убеждённость некоторых оппонентов говорит о возможностях модели развития. Однозначно, предприниматели в сети интернет своевременно верифицированы.</p>
+                    <p>Наше дело не так однозначно, как может показаться:</p>
+                    <ul class="text-block-list">
+                        <li>информационно-пропагандистское обеспечение нашей деятельности</li>
+                        <li>предприниматели в сети интернет</li>
+                        <li>реплицированные с зарубежных источников, современные исследования</li>
+                        <li>убеждённость некоторых оппонентов говорит о возможностях модели развития</li>
+                        <li>определяющее значение для вывода текущих активов</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <div class="highlight-icon"><img src="img/light.svg"></div>
+                        <p>Ясность нашей позиции очевидна: курс на социально-ориентированный национальный проект однозначно фиксирует необходимость дальнейших направлений развития. В своём стремлении повысить качество жизни, они забывают, что социально-экономическое развитие в значительной степени обусловливает важность экономической целесообразности принимаемых решений.</p>
+                    </div>
+                    <p>Приятно, граждане, наблюдать, как многие известные личности своевременно верифицированы. Господа, высококачественный прототип будущего проекта играет определяющее значение для вывода текущих активов. Наше дело не так однозначно, как может показаться: постоянное информационно-пропагандистское обеспечение нашей деятельности способствует повышению качества экспериментов, поражающих по своей масштабности и грандиозности.</p>
+                    <p>Разнообразный и богатый опыт говорит нам, что курс на социально-ориентированный национальный проект:</p>
+                    <ol class="text-block-numbered">
+                        <li><span>01</span> Информационно-пропагандистское обеспечение нашей деятельности</li>
+                        <li><span>02</span> Предприниматели в сети интернет</li>
+                        <li><span>03</span> Реплицированные с зарубежных источников, современные исследования</li>
+                        <li><span>04</span> Убеждённость некоторых оппонентов говорит о возможностях модели развития</li>
+                        <li><span>05</span> Определяющее значение для вывода текущих активов некоторых оппонентов говорит о возможностях модели развития</li>
+                    </ol>
+                    <p>В целом, конечно, синтетическое тестирование предопределяет высокую востребованность экономической целесообразности принимаемых решений. Наше дело не так однозначно, как может показаться: убеждённость некоторых оппонентов говорит о возможностях модели развития. Однозначно, предприниматели в сети интернет своевременно верифицированы.</p>
+                </div>
+                <div class="text-block-right">
+                    <img src="img/text_1.svg" alt="Процедура">
+                </div>
+            </div>
+        </div>
+
+        <!-- Text Block 2 -->
+        <div class="text-block">
+            <div class="container">
+                <div class="text-block-left">
+                    <h2>Текстовый блок Н3</h2>
+                    <p>Приятно, граждане, наблюдать, как многие известные личности своевременно верифицированы. Господа, высококачественный прототип будущего проекта играет определяющее значение для вывода текущих активов. Наше дело не так однозначно, как может показаться: постоянное информационно-пропагандистское обеспечение нашей деятельности способствует повышению качества экспериментов, поражающих по своей масштабности и грандиозности. Кстати, реплицированные с зарубежных источников, современные исследования формируют глобальную экономическую сеть и при этом — объявлены нарушающими общечеловеческие нормы этики и морали.</p>
+                    <p>В целом, конечно, синтетическое тестирование предопределяет высокую востребованность экономической целесообразности принимаемых решений. Наше дело не так однозначно, как может показаться: убеждённость некоторых оппонентов говорит о возможностях модели развития. Однозначно, предприниматели в сети интернет своевременно верифицированы.</p>
+                    <div class="highlight-box">
+                        <div class="highlight-icon"><img src="img/“.svg"></div>
+                        <p>Ясность нашей позиции очевидна: курс на социально-ориентированный национальный проект однозначно фиксирует необходимость дальнейших направлений развития. В своём стремлении повысить качество жизни, они забывают, что социально-экономическое развитие в значительной степени обусловливает важность экономической целесообразности принимаемых решений.</p>
+                    </div>
+                    <div class="doctor-card-inline">
+                        <img src="img/doctor.svg" alt="Врач" class="doctor-card-avatar">
+                        <div class="doctor-card-info">
+                            <h4>Константинопольский Константин Константинович</h4>
+                            <p>Главный врач клиники, психиатр-нарколог</p>
+                            <span class="experience">Опыт работы: 15 лет</span>
+                        </div>
+                    </div>
+                    <p>В целом, конечно, синтетическое тестирование предопределяет высокую востребованность экономической целесообразности принимаемых решений. Наше дело не так однозначно, как может показаться: убеждённость некоторых оппонентов говорит о возможностях модели развития. Однозначно, предприниматели в сети интернет своевременно верифицированы.</p>
+                </div>
+                <div class="text-block-right">
+                    <img src="img/text_2.svg" alt="Уход">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Licenses — новый макет -->
+    <section class="licenses" id="licenses">
+        <div class="container">
+            <div class="licenses-layout">
+                <!-- Левая колонка: текст + навигация -->
+                <div class="licenses-left">
+                    <h2 class="licenses-title">Лицензии клиники<br>АкваМед</h2>
+                    <p class="licenses-text">Клиника работает на основании медицинской лицензии и всех необходимых разрешений. Работаем с пациентами на основе заключённого договора о предоставлении медицинских услуг — прозрачно, безопасно и с защитой вашего здоровья.</p>
+                    <p class="licenses-text">Мы используем только сертифицированные препараты и соблюдаем стандарты Министерства здравоохранения РФ.</p>
+                    <p class="licenses-text">Медицинская лицензия ООО «Кристалл» Л041-01148-78/00347913</p>
+                    <div class="licenses-nav">
+                        <button class="licenses-nav-btn prev" aria-label="Предыдущая">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                        </button>
+                        <button class="licenses-nav-btn next" aria-label="Следующая">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Правая колонка: карточки лицензий -->
+                <div class="licenses-right">
+                    <div class="license-card">
+                        <div class="license-img-wrapper">
+                            <img src="img/License.svg" alt="Лицензия 1">
+                        </div>
+                        <p class="license-desc">Приятно, граждане, наблюдать, как многие известные личности своевременно верифицированы</p>
+                    </div>
+                    <div class="license-card">
+                        <div class="license-img-wrapper">
+                            <img src="img/License.svg" alt="Лицензия 2">
+                        </div>
+                        <p class="license-desc">Приятно, граждане, наблюдать, как многие известные личности своевременно верифицированы</p>
+                    </div>
+                    <div class="license-card">
+                        <div class="license-img-wrapper">
+                            <img src="img/License.svg" alt="Лицензия 3">
+                        </div>
+                        <p class="license-desc">Приятно, граждане, наблюдать, как многие известные личности своевременно верифицированы</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ — новый макет -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="faq-title">Отвечаем на ваши вопросы</h2>
+            <div class="faq-list">
+                <!-- Активный вопрос -->
+                <div class="faq-item active">
+                    <button class="faq-question">
+                        <span>Существуют ли в клинике пакетные предложения или скидки?</span>
+                        <span class="faq-toggle-icon">−</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Клиника работает на основании медицинской лицензии и всех необходимых разрешений. Работаем с пациентами на основе заключения договора о предоставлении медицинских услуг — прозрачно, безопасно и с защитой вашего здоровья.</p>
+                        <div class="faq-doctor">
+                            <img src="img/doctor.svg" alt="Врач">
+                            <div class="faq-doctor-info">
+                                <h4>Константинопольский Константин Константинович</h4>
+                                <p>Главный врач клиники, психиатр-нарколог</p>
+                                <span class="experience">Опыт работы: 15 лет</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Закрытые вопросы -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Клиника работает на основании медицинской лицензии и всех необходимых разрешений?</span>
+                        <span class="faq-toggle-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Абсолютно верно. Наша лицензия выдана Министерством здравоохранения и соответствует всем современным стандартам.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Существуют ли в клинике пакетные предложения или скидки?</span>
+                        <span class="faq-toggle-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Да, у нас действуют различные программы лояльности, пакетные предложения и сезонные скидки.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Клиника работает на основании медицинской лицензии?</span>
+                        <span class="faq-toggle-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Абсолютно верно. Наша лицензия выдана Министерством здравоохранения и соответствует всем современным стандартам.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Существуют ли в клинике пакетные предложения или скидки?</span>
+                        <span class="faq-toggle-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Мы регулярно обновляем наши предложения. Рекомендуем подписаться на рассылку или следить за обновлениями на сайте.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer — новый макет -->
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Левая колонка: логотип, поиск, кнопка, соцсети -->
+                <div class="footer-column footer-column-left">
+                    <div class="footer-logo">
+                        <img src="img/logo.svg">
+                        <div class="footer-logo-text-block">
+                            <div class="footer-logo-name">АкваМед</div>
+                            <div class="footer-logo-desc">Клиника капельниц</div>
+                        </div>
+                    </div>
+                    <div class="footer-search">
+                        <input type="text" placeholder="Поиск по сайту">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                    </div>
+                    <a href="#services" class="btn btn-primary footer-btn">Капельница на дому</a>
+                    <div class="footer-socials">
+                        <a href="#" class="social-icon" aria-label="VK"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm4.962 17.123h-1.744c-.66 0-.864-.525-2.05-1.714-1.033-1.033-1.49-1.171-1.744-1.171-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4 8.57 4 8.196c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.678.864 2.491 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.203.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.254-1.406 2.151-3.574 2.151-3.574.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.049.17.49-.085.744-.576.744z"/></svg></a>
+                        <a href="#" class="social-icon" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+                        <a href="#" class="social-icon" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+                        <a href="#" class="social-icon" aria-label="Сайт"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></a>
+                    </div>
+                    <div class="footer-links-bottom">
+                        <a href="#">Карта сайта</a>
+                        <a href="#">Политика конфиденциальности</a>
+                    </div>
+                </div>
+
+                <!-- Колонка 1: О клинике -->
+                <div class="footer-column">
+                    <h4>О клинике</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#doctors">Специалисты</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Фотогалерея</a></li>
+                        <li><a href="#prices">Цены</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#articles">Статьи</a></li>
+                        <li><a href="#faq">Ответы на вопросы</a></li>
+                        <li><a href="#licenses">Лицензии</a></li>
+                    </ul>
+                </div>
+
+                <!-- Колонка 2: Капельницы -->
+                <div class="footer-column">
+                    <h4>Капельницы</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Капельница Детокс</a></li>
+                        <li><a href="#services">Капельница Энергия</a></li>
+                        <li><a href="#services">Капельница Золушка</a></li>
+                        <li><a href="#services">Капельница Детокс</a></li>
+                        <li><a href="#services">Капельница Энергия</a></li>
+                        <li><a href="#services">Капельница Золушка</a></li>
+                        <li><a href="#services">Капельница Детокс</a></li>
+                        <li><a href="#services">Капельница Энергия</a></li>
+                        <li><a href="#services">Капельница Золушка</a></li>
+                    </ul>
+                </div>
+
+                <!-- Колонка 3: Контактные данные -->
+                <div class="footer-column">
+                    <h4>Контактные данные</h4>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#1B8A4C" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        <div>
+                            <div class="contact-label">Телефон</div>
+                            <a href="tel:+78008899999" class="contact-value">+7 (800) 889-99-99</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#1B8A4C" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <div>
+                            <div class="contact-label">Адрес</div>
+                            <span class="contact-value">Санкт-Петербург, ул. Авиаконструкторов 45к1</span>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#1B8A4C" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <div>
+                            <div class="contact-label">Электронная почта</div>
+                            <a href="mailto:info@kapelnica-med.ru" class="contact-value">info@kapelnica-med.ru</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#1B8A4C" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        <div>
+                            <div class="contact-label">Время работы</div>
+                            <span class="contact-value">Круглосуточно, 24/7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Низ: два контейнера -->
+            <div class="footer-bottom-row">
+                <div class="footer-bottom-left-text">
+                    <p>© 2025 Все права защищены</p>
+                    <p>Официальный медицинский сайт клиники капельниц и инфузионной терапии «Аквамед» в Москве.</p>
+                </div>
+                <div class="footer-bottom-right-text">
+                    <p>Сайт носит исключительно информационный характер и не является публичной офертой. Консультационные услуги, оказываемые по телефону, мессенджерам и в соцсетях носят исключительно информационный характер и не являются медицинскими услугами. Медицинская помощь оказывается в домашних условиях по адресу и месту нахождения пациента и месту вызова врача.</p>
+                    <p>Медицинские услуги оказываются по лицензии клиники-партнёра ООО «Кристалл» Л041-01148-78/00347913 ИНН: 7811740190</p>
+                    <p>Адрес оказания медицинских услуг в стационаре: 192148, Россия, г. Санкт-Петербург, улица Седова, дом 37, литер А, помещение 20-Н, 21-Н, офис 17</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+<!-- Modal Form — по макету -->
+<div class="form-modal-overlay" id="formModalOverlay">
+    <div class="form-modal">
+        <button class="form-modal-close" aria-label="Закрыть">&times;</button>
+        <div class="form-modal-icon" id="formModalIcon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
+        </div>
+        <h3 id="formModalTitle">Заявка успешно отправлена!</h3>
+        <p id="formModalText">Наш специалист свяжется с вами в ближайшее время.</p>
+        <button class="form-modal-btn" id="formModalBtn">Хорошо</button>
+    </div>
+</div>
+
+<!-- Modal Form -->
+<div class="modal-form-overlay" id="modalFormOverlay">
+    <div class="modal-form">
+        <button class="modal-form-close" id="modalFormClose" aria-label="Close">&times;</button>
+        <h3 class="modal-form-title">Не знаете какая капельница или процедура вам подойдёт?</h3>
+        <p class="modal-form-subtitle">Оставьте заявку, наш специалист перезвонит вам и бесплатно проконсультирует вас</p>
+        <form class="modal-form-form" id="modalForm" action="api/submit-form.php" method="POST">
+            <div class="modal-form-row">
+                <input type="text" name="name" class="modal-form-input" placeholder="Ваше имя" required>
+                <input type="text" name="phone" class="modal-form-input" placeholder="Телефон / Email" required>
+            </div>
+            <button type="submit" class="modal-form-btn">Отправить заявку</button>
+            <p class="modal-form-policy">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+        </form>
+    </div>
+</div>
+
+<!-- Modal Result -->
+<div class="modal-result-overlay" id="modalResultOverlay">
+    <div class="modal-result">
+        <button class="modal-result-close" id="modalResultClose" aria-label="Close">&times;</button>
+        <div class="modal-result-icon" id="modalResultIcon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
+        </div>
+        <h3 id="modalResultTitle">Заявка успешно отправлена!</h3>
+        <p id="modalResultText">Наш специалист свяжется с вами в ближайшее время.</p>
+        <button class="modal-result-btn" id="modalResultBtn">Хорошо</button>
+    </div>
+</div>
+
+</body>
+</html>
