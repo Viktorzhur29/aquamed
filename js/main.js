@@ -48,6 +48,7 @@ function initRateLimit() {
 // ==================== DOM READY ====================
 document.addEventListener('DOMContentLoaded', function() {
     initRateLimit();
+    initNavDropdown();
     initMobileMenu();
     initFAQ();
     initLicensesSlider();
@@ -58,6 +59,67 @@ document.addEventListener('DOMContentLoaded', function() {
     initModalForm();
     initModalResult();
 });
+
+// ==================== NAV DROPDOWN (О клинике) ====================
+function initNavDropdown() {
+    const wrap = document.getElementById('navAboutWrap');
+    const btn  = document.getElementById('navAboutBtn');
+    const drop = document.getElementById('navAboutDropdown');
+    if (!wrap || !btn || !drop) return;
+
+    btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const isOpen = drop.classList.contains('open');
+        closeDropdown();
+        if (!isOpen) openDropdown();
+    });
+
+    function openDropdown() {
+        drop.classList.add('open');
+        btn.classList.add('active');
+        btn.setAttribute('aria-expanded', 'true');
+    }
+
+    function closeDropdown() {
+        drop.classList.remove('open');
+        btn.classList.remove('active');
+        btn.setAttribute('aria-expanded', 'false');
+        drop.querySelectorAll('.nav-submenu').forEach(s => s.classList.remove('open'));
+        drop.querySelectorAll('.nav-dropdown-item').forEach(i => i.classList.remove('submenu-open'));
+    }
+
+    drop.querySelectorAll('.nav-dropdown-item.has-submenu').forEach(function(item) {
+        item.addEventListener('mouseenter', function() {
+            drop.querySelectorAll('.nav-dropdown-item').forEach(i => {
+                i.classList.remove('submenu-open');
+                const sub = i.querySelector('.nav-submenu');
+                if (sub) sub.classList.remove('open');
+            });
+            item.classList.add('submenu-open');
+            const sub = item.querySelector('.nav-submenu');
+            if (sub) sub.classList.add('open');
+        });
+
+        item.addEventListener('mouseleave', function(e) {
+            if (item.contains(e.relatedTarget)) return;
+            item.classList.remove('submenu-open');
+            const sub = item.querySelector('.nav-submenu');
+            if (sub) sub.classList.remove('open');
+        });
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!wrap.contains(e.target)) closeDropdown();
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeDropdown();
+    });
+
+    drop.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', closeDropdown);
+    });
+}
 
 // ==================== MOBILE MENU ====================
 function initMobileMenu() {
