@@ -39,10 +39,6 @@ akvamed/
      - `doctor-avatar.svg`
      - `license-1.svg`, `license-2.svg`, `license-3.svg`
 
-3. **Шрифты:**
-   - Добавьте шрифты в папку `fonts/`
-   - Подключите в CSS если нужно
-
 4. **Настройка:**
    - Укажите реальные данные в `includes/db.php`
    - Настройте email/Telegram уведомления в `api/submit-form.php`
@@ -64,7 +60,7 @@ akvamed/
 - Подключение к БД через PDO
 
 ## Цветовая схема
-- Основной: #1B8A4C (зелёный)
+- Основной: #1B8A4C 
 - Тёмный: #0F4A2E
 - Светлый: #E8F5EE
 - Фон: #F8FBF9
